@@ -1,0 +1,71 @@
+.title_card {
+  font-size: 1.5rem;
+}
+
+.card-img {
+  
+position:absolute;
+top:0px;
+left:0;
+  z-index: 8;
+  height: 100%;
+  width: 100%;
+  /* background:url("https://ferreteriapedro.000webhostapp.com/img/movil4.jpg"); */
+  transition: 1s;
+}
+
+.card-img img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.body_card {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.body_card > p {
+  margin: 0 0.1rem;
+}
+
+.body_card,
+.description,
+.title_card,
+.links {
+  margin:0.5rem;
+  z-index: 3;
+}
+
+
+.card_project {
+
+  position:relative;
+  color: var(--text-color);
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  transition:1s;
+  overflow: hidden;
+  border-radius: 3px;
+  margin: 1rem 1rem;
+  padding:2rem;
+  height: 25rem;
+}
+
+.card_project:hover {
+  border: 1px solid var(--select-color);
+  box-shadow: #74ffbc 0 0 15px;
+  /* color: var(--background-color); */
+  /* background-color: var(--select-color); */
+}
+
+.card_project:hover .card-img {
+    opacity: 0.2;
+    z-index: 1;
+    filter: grayscale(100%);
+  }

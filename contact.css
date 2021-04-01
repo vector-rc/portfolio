@@ -1,0 +1,103 @@
+.contact>h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 2rem;
+    text-align: center;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  
+  input,
+  textarea {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.7s;
+  }
+  
+  .btn:hover {
+    background-color: var(--select-color);
+    box-shadow: var(--glow-color) 0 0 30px;
+    border: 1px solid var(--select-color);
+    color: var(--background-color);
+  }
+  
+  
+  .btn{
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 13rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: var(--background-color) ;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.7s;
+    text-align: center;
+  }
+  
+
+  .email-contact,
+  .name-contact{
+      
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 27rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: var(--background-color) ;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.7s;
+    text-align: center;
+
+  }
+  
+  input[type="email"]:invalid{
+    box-shadow: 0 0 20px tomato;
+    border: 1px solid tomato;
+    color: tomato;
+  }
+  
+  input:focus,
+  textarea:focus ,
+  input:hover,
+  textarea:hover {
+    box-shadow: 0 0 20px var(--glow-color);
+    border: 1px solid var(--glow-color);
+  }
+  
+  
+  ::placeholder {
+    color: var(--placeholder-color);
+  }
+  
+  textarea {
+    margin: 0.5rem;
+    width: 27rem;
+    height: 10rem;
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+.contact{
+    height: 80vh;
+    
+  color: var(--text-color);
+  gap: 2rem;
+  margin: 1rem;
+  
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  padding-top: 3rem;
+}
