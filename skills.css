@@ -1,5 +1,6 @@
 .skills,
-.hobbies{
+.hobbies,
+.contacts{
     
   color: var(--text-color);
   margin: 1rem;
@@ -12,7 +13,8 @@
 }
 
 .skill,
-.hobbie {
+.hobbie,
+.contact {
     border: 1px solid var(--border-color);
     list-style: none;
     font-size: 9rem;
@@ -22,7 +24,7 @@
     justify-content: center;
     align-items: center;
     transition:0.5s;
-    border-radius:3px;
+    border-radius:4px;
     justify-self: center;
     align-self: center;
     
@@ -60,13 +62,24 @@
 
   .hobbie:hover path{
     stroke:var(--background-color)
-    
-    }
+  }
+
+  .contact:hover a{
+    color:var(--background-color);
+    text-decoration: none;
+
+  }
+
+  .contact>a{
+    display: flex;
+  }
 
 
   
   .skill:hover,
-  .hobbie:hover {
+  .hobbie:hover,
+  .contact:hover{
+    text-decoration: none;
     background-color: var(--select-color);
     box-shadow: var(--glow-color) 0 0 30px;
     /* filter: drop-shadow(var(--glow-color) 0 0 30px); */

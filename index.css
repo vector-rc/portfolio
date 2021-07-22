@@ -1,7 +1,3 @@
-
-
-/* @import url("project.css"); */
-@import url("contact.css");
 @import url("card.css");
 @import url("skills.css");
 
@@ -18,71 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "consolas";
-  cursor: none;
   scroll-behavior: smooth;
-}
-
-
-
-
-
-.cursor-mouse:nth-child(6) {
-  position: absolute;
-  pointer-events: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--select-color);
-  opacity: 0.6;
-  box-shadow: 0 0 20px var(--select-color);
-  z-index: 20;
-  color: var(--select-color);
-  transition:transform 0.1s;
-
-}
-.cursor-mouse:nth-child(5){
-  position: absolute;
-  pointer-events: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--select-color);
-  /* opacity: 0.5; */
-  box-shadow: 0 0 20px var(--select-color);
-  z-index: 10;
-  color: var(--select-color);
-  transition: 0.04s;
-  transform: scale(0.9)
-  
-}
-.cursor-mouse:nth-child(3) {
-  position: absolute;
-  pointer-events: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--select-color);
-  opacity: 0.4;
-  box-shadow: 0 0 20px var(--select-color);
-  z-index: 10;
-  color: var(--select-color);
-  transition: 0.08s;
-  mix-blend-mode:hard-light;
-  transform: scale(0.8)
-}
-.cursor-mouse:nth-child(4){
-  position: absolute;
-  pointer-events: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--select-color);
-  opacity: 0.3;
-  box-shadow: 0 0 20px var(--select-color);
-  z-index: 10;
-  color: var(--select-color);
-  transition:  0.1s;
-  transform: scale(0.7)
 }
 
 *::selection {
@@ -115,16 +47,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 header {
-  background-color: #101024ee;
-  backdrop-filter: blur(20px);
+  background-color: var(--background-color);
   position: fixed;
   top: 0;
-  width: 80vw;
+  width: 100vw;
   transition: transform 1s;
   z-index: 9;
-
-  /* box-shadow: 0px 15px 10px -15px  var(--glow-color); */
-  /* border:1px solid var(--border-color); */
 }
 nav {
   color: var(--text-color);
@@ -159,6 +87,7 @@ nav {
 }
 
 .char {
+  cursor:default;
   display: inline-block;
   transition: all 0.3s;
 }
@@ -184,14 +113,6 @@ h3 {
   color: #2efe9a66;
   font-weight: 1;
 }
-
-/* ul {
-  justify-content: space-around;
-  display: flex;
-  border: 1px solid var(--border-color);
-  padding: 0.5rem;
-  align-items: center;
-} */
 
 a {
   transition: all 0.5s;
