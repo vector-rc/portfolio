@@ -4,8 +4,8 @@
 
 * {
   --border-color: #3cad7a;
-  --text-color: #3cad7a;
-  --background-color: #101024;
+  --text-color: #2efe9a;
+  --background-color: #020c1b;
   --link-color: #44c88c;
   --select-color: #2efe9a;
   --glow-color: #74ffbc;
@@ -61,12 +61,13 @@ nav {
   color: var(--text-color);
   margin: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.5rem;
 }
 
 .logo{
-  width:1rem;
+  width:5rem;
+  transform: scale(1.2);
   transition:all 0.3s;
 }
 .logo path{
@@ -84,8 +85,7 @@ nav {
 }
 
 .pages{
-  display:none;
-  width:60%;
+display: none;
   justify-content:space-between
 }
 
@@ -124,7 +124,7 @@ h3 {
 a {
   transition: all 0.5s;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--text-color);
 }
 
 li {
@@ -156,11 +156,11 @@ li:hover {
  {
   color: var(--text-color);
   margin: 1rem;
-  width: 90vw;
+  width: 70vw;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 3rem;
+  gap: 2rem;
 }
 .work > h2 {
   height: 4rem;
@@ -322,6 +322,7 @@ a:hover {
   }
 .pages{
   display: flex;
+  width: 60%;
 }
   .about {
     width: 90vw;
@@ -351,7 +352,8 @@ a:hover {
     display:none;
   }
   .pages{
-    display:flex
+    display:flex;
+    width: 40%;
   }
     .about {
       width: 80vw;

@@ -1,17 +1,17 @@
 .skills,
 .hobbies,
 .contacts{
-    
+    align-content: center;
   color: var(--text-color);
-  margin: 1rem;
   width: 80vw;
   min-height: 100vh;
   height: auto;
   display: grid;
-  /* grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit,minmax(min(100%,10rem),1fr)); */
-  padding: 3rem 0;
-  gap:0.4rem
+  /* grid-auto-flow: dense;*/
+  grid-auto-rows: minmax(9rem,13rem);
+  grid-template-columns: repeat(auto-fit,minmax(min(30%,18rem),2fr));
+  gap:1.5rem;
+  
 }
 
 .skill,
@@ -29,6 +29,7 @@
     border-radius:4px;
     justify-self: center;
     align-self: center;
+    color: var(--text-color);
     
   }
 
@@ -45,6 +46,10 @@
   .skill path{
     fill:var(--text-color);
     stroke:var(--text-color);
+
+  }
+  .contact li{
+    color: var(--text-color);
 
   }
 

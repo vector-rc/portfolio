@@ -50,7 +50,6 @@
   transition: 0.5s;
   overflow: hidden;
   border-radius: 3px;
-  margin: 1rem 1rem;
   padding: 2rem;
   height: 18rem; 
   border: 1px solid var(--background-color);
