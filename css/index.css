@@ -18,9 +18,12 @@
 }
 
 *::selection {
-  background-color: var(--select-color);
+  background-color: #2efe9a55;
 }
 
+.menu{
+  display:inline;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -81,7 +84,7 @@ nav {
 }
 
 .pages{
-  display: flex;
+  display:none;
   width:60%;
   justify-content:space-between
 }
@@ -93,14 +96,18 @@ nav {
 }
 h1 {
   transition: all 1s;
+  text-align: center;
   align-items: center;
   display: block ;
-  font-size:6rem;
+  font-size:3rem;
 }
-
+.info{
+  font-size: 1rem;
+}
 
 .saludo{
   color: #2efe9a88;
+  font-size: 1rem;
 }
 
 .char:hover {
@@ -149,11 +156,10 @@ li:hover {
  {
   color: var(--text-color);
   margin: 1rem;
-  
-  width: 80vw;
+  width: 90vw;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding: 3rem;
 }
 .work > h2 {
@@ -258,7 +264,6 @@ a:hover {
   opacity: 0;
   border: 1px solid var(--select-color);
   z-index: 20;
-  visibility: hidden;
 }
 
 
@@ -287,6 +292,10 @@ a:hover {
   
 }
 
+.sub-title{
+  display: inline-block;
+  margin: 0 6px;
+}
 .bar-fg{
   width: 0rem;
   height: 0.6rem;
@@ -304,3 +313,63 @@ a:hover {
   align-self: center;
   justify-self: center;
 }
+
+@media screen and (min-width: 800px) {
+
+  
+  .menu{
+    display:none;
+  }
+.pages{
+  display: flex;
+}
+  .about {
+    width: 90vw;
+  }
+  .projects
+ {
+  width: 90vw;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.titulo {
+  font-size:3rem;
+}
+.saludo{
+  font-size: 1.5rem;
+}
+
+.info{
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (min-width: 1280px) {
+
+ 
+  .menu{
+    display:none;
+  }
+  .pages{
+    display:flex
+  }
+    .about {
+      width: 80vw;
+    }
+    .projects
+   {
+    width: 80vw;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .titulo {
+    font-size:6rem;
+  }
+  .saludo{
+    font-size: 2rem;
+  }
+  
+  .info{
+    font-size: 1.5rem;
+  }
+  }
