@@ -48,11 +48,7 @@
     stroke:var(--text-color);
 
   }
-  .contact li{
-    color: var(--text-color);
-
-  }
-
+  
   .hobbie path{
     stroke-width:2 ;
     stroke-linejoin:round;
